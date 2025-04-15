@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --heading-size: 3rem;
+  --plastic: #101010;
+}
+
+body {
+  margin: auto;
+  font-family: Familjen Grotesk, Helvetica, sans-serif;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1600px;
+  height: 100vh;
+}
+
+.crt {
+  margin-top: 1rem;
+  /* display: flex; */
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 98vw;
+  height: 98vh;
+  box-shadow: inset 0px 0px 3px 3px #000;
+  border-radius: 50% / 3%;
+  background-color: var(--plastic);
+  color: #fff;
+}
+
+.crt:before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  position: absolute;
+  top: 10%;
+  bottom: 10%;
+  right: -5%;
+  left: -5%;
+  background: inherit;
+  border-radius: 5% / 50%;
+}
+
+h1 {
+  padding: 15px;
+  font-size: var(--heading-size);
+  color: #fff;
+}
+
+.player {
+  background-color: var(--plastic);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.darkness {
+  background-color: #000;
+  border: inset 4px #000;
+  width: 550px;
+}
+
+#vhs-logo {
+  height: 50px;
+}
+
+.hero {
+  margin: 10px;
+}
+
+.hero-image {
+  width: 550px;
+}
