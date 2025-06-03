@@ -58,7 +58,7 @@ h1 {
   color: #fff;
 }
 
-.player {
+.door {
   background-color: var(--plastic);
   display: flex;
   justify-content: center;
@@ -77,6 +77,13 @@ h1 {
 
 .hero {
   margin: 10px;
+}
+
+.hero:hover {
+  .door {
+    transform: perspective(1200px) translateZ(0px) translateX(0px)
+      translateY(0px) rotatex(-90deg);
+  }
 }
 
 .hero-image {
